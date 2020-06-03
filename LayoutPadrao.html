@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8" />
+<title>Cobrança</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+<meta name="viewport" content="width=device-width" />
+<link th:href="@{images/favicon.ico}" type="imagens/ico" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" th:href="@{/CSS/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/CSS/style.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/CSS/bootstrap-datepicker-standalone.min.css}" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<header layout:insert="Cabecalho"></header>
+
+	<section layout:fragment="conteudo">
+		<p>Conteúdo principal</p>
+	</section>
+
+	<script th:src="@{/JS/jquery-3.4.1.min.js}"></script>
+	<script th:src="@{/JS/bootstrap.min.js}"></script>
+	<script th:src="@{/JS/bootstrap-datepicker.min.js}"></script>
+	<script th:src="@{/JS/bootstrap-datepicker.pt-BR.min.js}"></script>
+	<script th:src="@{/JS/jquery.maskMoney.min.js}"></script>
+	<script th:src="@{/JS/cobranca.js}"></script>
+</body>
+</html> 
