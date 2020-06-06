@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorator="LayoutPadrao">
-<head>
-<title>Cadastro de título</title>
-</head>
-<section layout:fragment="conteudo">
-	<form class="form-horizontal" method="POST" th:action="@{/titulos}"
-		th:object="${titulo}">
-		<!-- se no objeto #titulo conter erros ele renderisa o #fields -->
-		<div layout:insert="MensagemGeral"></div>
-		<div layout:insert="MensagemErro"></div>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="LayoutPadrao">
 
+<head>
+	<title>Cadastro de título</title>
+</head>
+<section>
+	<form class="form-horizontal" method="POST">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<div class="clearfix">
